@@ -1,0 +1,31 @@
+{
+    "name": "jncinet/qihucms-user-email",
+    "description": "description",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "homepage": "https://www.qihucms.com",
+    "keywords": [
+        "jncinet", "qihucms", "user", "email"
+    ],
+    "authors": [
+        {
+            "name": "zhangye",
+            "email": "365chizhou@sina.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jncinet\\Qihucms\\UserEmail\\": "src/"
+        }
+    },
+    "require": {
+        "jncinet/laravel-email-captcha": "^1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jncinet\\QihucmsUserEmail\\Qihucms\\UserEmailServiceProvider"
+            ]
+        }
+    }
+}
